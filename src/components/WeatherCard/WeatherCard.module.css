@@ -1,0 +1,31 @@
+.cardContainor {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+
+.weather{
+    display: flex;
+    gap:1rem;
+    overflow-x: auto;
+}
+
+.weatherInfo{
+    padding: 0.5rem;
+    transform: scale(70%);
+    font-size: 1.5rem;
+}
+
+.key_value {
+    display: flex;
+    gap:2rem;
+    color: rgb(122, 122, 227);
+}
+
+.heading{
+   display: flex;
+   flex-direction: column;
+   gap: 0.7rem;   
+}

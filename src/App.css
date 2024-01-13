@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    animation: logo 1s linear infinite alternate;
+    transform: rotate(350deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes logo {
+    from {
+        transform:rotate(5deg)  
+    }
+    to{
+        transform: rotate(15deg);
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    display: flex;
+    gap: 3rem;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input_field{
+    display: flex;
+    padding-top: 1.3rem;
+    position: relative;
+    width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+input {
+    height: fit-content;
+    padding: 0.7rem;
+    font-size: large;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid skyblue;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.search{
+    position: absolute;
+     right: 1%;
+     bottom:15%;
+    cursor: pointer; 
+    transition: transform 150ms;
+}
+
+.search:hover{
+    transform: scale(110%);
+}
+
+.search img{
+    width:  2rem;
+    height: 2rem;
+    background-color: rgb(63, 175, 255);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {      
+    html{
+        font-size: 16px;
+    }
 }
