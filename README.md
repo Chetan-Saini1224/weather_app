@@ -21,6 +21,7 @@ React.js, Javascript, Module css(styling).
 
 1.  download or clone the repository
 2.  Create your own openWeather key and set as .env variable
-3.  # Scipts
-    npm install
-    npm start
+3.  Open folder in Code Editor(ex:- VS Code)
+4.  Open Terminal and run following command
+    # npm install
+    # npm start
