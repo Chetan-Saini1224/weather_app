@@ -18,7 +18,7 @@ function App() {
      {
       try{
           //getting latitude and longitude
-          const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=0&appid=${process.env.REACT_APP_API_KEY}`)
+          const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=0&appid=${process.env.REACT_APP_API_KEY}`)
 
           const cityData = await res.json();
           console.log(cityData);
