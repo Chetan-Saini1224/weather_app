@@ -1,8 +1,8 @@
 
 
 .logo{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 1rem;
     animation: logo 1s linear infinite alternate;
     transform: rotate(350deg);
@@ -25,6 +25,7 @@
     padding: 1rem;
     width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    max-width: 90vw;
 }
 
 .input_field{
@@ -39,7 +40,7 @@
 input {
     height: fit-content;
     padding: 0.7rem;
-    font-size: large;
+    font-size:16px;
     border-radius: 10px;
     outline: none;
     border: 2px solid skyblue;
@@ -47,19 +48,19 @@ input {
 }
 
 
-.search{
-    position: absolute;
-     right: 1%;
-     bottom:15%;
+.search {
     cursor: pointer; 
     transition: transform 150ms;
 }
 
-.search:hover{
+.search:hover {
     transform: scale(110%);
 }
 
 .search img{
+    position: absolute;
+    right: 1%;
+    bottom: 8%;
     width:  2rem;
     height: 2rem;
     background-color: rgb(63, 175, 255);
@@ -70,6 +71,21 @@ input {
 
 @media screen and (max-width: 768px) {      
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
+    .form{
+        padding: 0.6rem;
+    }
+}
+
+.tempUnit{
+   display: flex;
+   gap:1rem;
+   margin-top: 1.5rem;    
+}
+
+.selectList{
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }

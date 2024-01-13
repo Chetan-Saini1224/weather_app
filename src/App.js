@@ -8,7 +8,7 @@ function App() {
   
   const [forecasts,setForecasts] = useState([]) 
   const [city,setCity] = useState("delhi");
-  const [tempToggle,setToogle] = useState(true);
+  const [tempUnit,setTempUnit] = useState(0);
   const value = useRef(null);
 
 
@@ -24,7 +24,7 @@ function App() {
           console.log(cityData);
             
           if(cityData.length == 0) {
-            alert('No City Found')
+            alert('No City Found') 
             return;
           }
       
@@ -106,10 +106,7 @@ function App() {
 
   return (
     <div className="app">
-    <div className='form'>
-       <div className='outer_toogle'>
-        <div className='inner_toogle'></div>
-       </div>        
+    <div className='form'>       
         <img 
           src="/logo.png"
           className='logo'
@@ -123,11 +120,16 @@ function App() {
             />
           </div>
         </div>
-         
-
+       <div className='tempUnit'>
+          <p style={{color:"whitesmoke",padding:"0.5rem"}}>Select Unit</p>
+          <select className='selectList' onChange={() => (tempUnit == 0)? setTempUnit(1):setTempUnit(0) }>
+            <option>Celsius</option>
+            <option>Fahrenheit</option>
+          </select> 
+       </div>  
     </div>
-    <CityCard data={currentData} tempUnit={0} />
-    <WeatherList forecasts={forecasts} tempUnit={0} />
+    <CityCard data={currentData} tempUnit={tempUnit} />
+    <WeatherList forecasts={forecasts} tempUnit={tempUnit} />
     </div>
   );
 }

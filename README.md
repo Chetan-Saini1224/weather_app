@@ -4,7 +4,7 @@ Weather Forecaster
 
 # Hosted Link
 
-//link
+https://weather-app-sigma-three-67.vercel.app/
 
 # About Project
 

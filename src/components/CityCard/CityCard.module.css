@@ -1,15 +1,16 @@
 .city_card_container{
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     min-width: fit-content;
     width: 70%;
     display: flex;
     gap:1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     background: rgb(247, 171, 171);
     background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(25, 10, 118, 0.7652310924369747) 0%);
     color: whitesmoke;
     text-transform: capitalize;
+    border-radius: 5px;
 }
 
 .temprature{

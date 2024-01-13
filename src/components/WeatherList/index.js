@@ -11,9 +11,16 @@ const WeatherList = ({forecasts,tempUnit}) => {
           <WeatherCard forecast={forecast} key={idx} tempUnit={tempUnit} /> 
       ))}
     </div>
-   : <p  className={Styles.message}>
-      Please Enter City Name to See The details
-      </p>}
+   :<div className={Styles.message}>
+      <div>
+       <img 
+          src="/logo.png"
+        />
+        <p >
+          Loading ....
+        </p>
+      </div>
+   </div>}
   </>)
 }
 

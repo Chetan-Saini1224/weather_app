@@ -10,7 +10,7 @@ body{
     padding-right: 5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    background: rgb(147, 255, 246);
-    background: linear-gradient(135deg, rgba(147, 255, 246, 1) 0%, rgba(21, 79, 247, 0.7652310924369747) 67%);
+    background: rgb(0, 67, 148);
+        background: linear-gradient(135deg, rgba(0, 67, 148, 1) 0%, rgba(74, 0, 123, 0.7652310924369747) 67%);
     min-height: 100vh;
 }
